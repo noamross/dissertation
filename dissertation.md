@@ -87,7 +87,7 @@ Aggregation is a core concept in macroparasite epidemiology.  Parasites are comm
 
 \newpage
 
-# Acknowledgements
+## Acknowledgements
 
 I have been fortunate to have many brilliant, patient, and collegial mentors on the way to my Ph.D. My advisor, Alan Hastings, gave me freedom to explore (and discard!) many topics on my circuitous route to this dissertation, and guidance and wisdom in narrowing my scope when it came time to settle on a topic. His vast knowledge, critical eye, and professional support have been essential in beginning a career as an ecologist.
 
