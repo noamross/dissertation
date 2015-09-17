@@ -95,15 +95,15 @@ I have greatly appreciated Jim Sanchirico's feedback, on this dissertation and m
 
 Dave Rizzo's mentorship has helped keep my theoretical work grounded in biology and in the real constraints of management problems related to forest disease.  I also thank him for inviting me in to be part of his lab, where I found a whole new community of friends and colleagues. 
 
-My collaboration with Richard Cobb has been a fount of ideas.  The core concepts that motivate this thesis emerged from his empirical work on Sudden Oak Death and our many fruitful discussions about reconciling what he found in the field with the predictions of our models. Jaime Ashander has also served as as a key sounding board for my ideas at every stage.
+My collaboration with Richard Cobb has been a fountain of ideas.  The core concepts that motivate this thesis emerged from his empirical work on Sudden Oak Death and our many fruitful discussions about reconciling what he found in the field with the predictions of our models. Jaime Ashander has also served as a key sounding board for my ideas at every stage.
 
 No one has had more influence on my approach to science as my lab mate Carl Boettiger, now at UC Berkeley. Carl introduced me to the concepts and community of open science, and was a constant source of useful advice and debate. He answered countless programming and mathematical questions of mine over the course of five years.
 
 Sebastian Schreiber and Marissa Baskett have also been wonderful sources of advice and feedback, and their stewardship of the "Teary Group", the weekly meetings of the ecological theory-oriented labs at Davis, provided my core intellectual community.
 
-Graduate school has the reputation of being an lonely slog. The warm, collegial community of the UC Davis Graduate Group in Ecology proves it doesn't need to be so. In addition to being a powerhouse of interdisciplinary intellectual activity, the GGE has been a source solidarity and camaraderie. Amongst my fellow students I found inspiration, support, and many lifelong friends. I am grateful to Sharon Lawler, who led the GGE in my time at Davis, for nurturing both the academic and social strength of the group.
+Graduate school has the reputation of being a lonely slog. The warm, collegial community of the UC Davis Graduate Group in Ecology proves it doesn't need to be so. In addition to being a powerhouse of interdisciplinary intellectual activity, the GGE has been a source of solidarity and camaraderie. Amongst my fellow students I found inspiration, support, and many lifelong friends. I am grateful to Sharon Lawler, who led the GGE in my time at Davis, for nurturing both the academic and social strength of the group.
 
-Finally, none of this work would have been possible without the support, wisdom, love, and example of my parents, brother and sister: William, Nechama, Jonathan, and Karen Ross.  They have been my greatest mentors as a scientist and as a human being.
+Finally, none of this work would have been possible without the support, wisdom, love, and example of my parents, brother, and sister: William, Nechama, Jonathan, and Karen Ross.  They have been my greatest mentors as a scientist and as a human being.
 
 \newpage
 
@@ -126,7 +126,7 @@ Introduction
 ------------
 
 Emerging fungal infections pose major threats to plant and animal wildlife
-populations as well as livestock and crops. Fungal life-history traits, including high
+populations as well as to livestock and crops. Fungal life-history traits, including high
 virulence, long-lived environmental reservoirs, and host generalism are thought
 to contribute to the potential of these pathogens to drive local and global
 extinctions of some species [@Fisher2012; @Eskew2013].
@@ -134,7 +134,7 @@ extinctions of some species [@Fisher2012; @Eskew2013].
 An important component of fungal host-pathogen dynamics is the role of spore load
 (or innoculum load) in driving host infectiousness and mortality. @Briggs2010 showed that
 population-level persistence or extinction of mountain yellow-legged frogs (*Rana
-sierrae*) infected by chytrid fungus (*Batrachochytrium dendrobatidis*), could
+sierrae*) infected by chytrid fungus (*Batrachochytrium dendrobatidis*) could
 be explained by the dynamics of spore load build-up in these populations.
 Similarly, mortality of bat populations
 with white nose syndrome (*Geomyces destructans*) is closely related to spore
@@ -144,14 +144,14 @@ bicuspidata* kills its *Daphnia* host when the parasite loads are high enough to
 interfere with cell metabolism [@Hall2009b]. Sudden Oak Death, caused by the oomycete *Phyophthora ramorum*,
 kills tanoak (*Notholithocarpus densiflorus*) faster in the presence of large
 numbers of other infected hosts, indicating that continued accumulation of
-infections, rather than just disease progress, drives mortality [@Cobb2012]. Many mammals, including humans,
+infections, rather than just disease progress, drives mortality [@Cobb2012]. Many mammals (including humans),
 which are generally resistant to fungal diseases or asymptomatic under normal
-conditions may nonetheless become infected and exhibit symptoms or mortality
+conditions, may nonetheless become infected and exhibit symptoms or mortality
 under persistent exposure to large fungal spore loads [@Casadevall2005].
 
 
 Many attempts to model fungal disease dynamics have used traditional susceptible-infected ($SI$) disease frameworks, which represent
-disease as a binary state of the host [@Kermack1927; @Briggs2005; @Mitchell2008; @Meentemeyer2011; @Foley2011a; @Maher2012;  @Cobb2012; @ORegan2014]
+disease as a binary state of the host [@Kermack1927; @Briggs2005; @Mitchell2008; @Meentemeyer2011; @Foley2011a; @Maher2012;  @Cobb2012; @ORegan2014].
 Extensions such as
 susceptible-exposed-infected-removed ($SEIR$) models represent disease
 progression within hosts, but do not capture the accumulation of new 
@@ -197,13 +197,13 @@ Here I explore how the transient host-pathogen dynamics differ between $SI$ and
 multi-infection systems. To compare models with different structures and in
 which parameters have different interpretations, I fit the models to each other
 so that they have identical dynamic behaviors at different stages of an epidemic.
-Using this approach, I ask, how do $SI$ and multi-infection models that behave
+Using this approach, I ask: how do $SI$ and multi-infection models that behave
 similarly at early stages of disease differ in long-term dynamics, and vice versa? 
 I also ask, how does model structure affect predictions of stage-specific behavior?
 I find that mortality rates increase over time in multi-infection models, diverging
 from $SI$ models, and that these mortality rates diverge between host stages
 due to accumulation of infections, even when stage-specific parameters are identical.
-An intermediate model form with multiple infections lower dimensionality, $SIV$,
+An intermediate model form with multiple infections and lower dimensionality, $SIV$,
 qualitatively captures most of the important features of the multi-infection forms.
 
 
@@ -816,8 +816,8 @@ parasites in flashlight fish (*Anomalops katopteron*) were in groups of 2. In
 other cases, parasite numbers greater than one are rare [@Donnelly1994; 
 @Adlard1994; @Kennedy1979]. Often, this density dependence is driven by limited 
 space in the host [@Uebelacker1978]. The rarity of underdispersal suggests that
-the influence of density-dependence is less than than that of individual
-variation in most populations, despite the fact that density-dependence does
+the influence of density dependence is less than than that of individual
+variation in most populations, despite the fact that density dependence does
 occur in many parasite populations [@Poulin2007].
 
 Macroparasites are generally thought of as persistent infections of populations, rather than transient epidemic phenomena [@Gulland1995]. Less attention has been paid to their transient dynamics, and the macroparasite framework is rarely used in cases of emerging epidemics. However,
@@ -845,7 +845,7 @@ population.
 
 Here I examine the dynamics the distribution of parasites among hosts in the
 classic infinite-dimensional model during the emergence of a disease that
-suppresses or host populations. I compare these dynamics to an equivalent
+suppresses host populations. I compare these dynamics to an equivalent
 discrete, stochastic, individual-based model. For both, I examine the relative
 utility of the negative binomial and the Conway-Maxwell-Poisson distributions
 in describing these distributions as they change over the course of an epidemic.
@@ -935,16 +935,15 @@ Code to reproduce the results in this paper is available at <https://github.com/
 
 The negative binomial distribution has traditionally been used as a model for
 macroparasite distributions. It has proven an excellent empirical model in
-the field [@Pacala1988].  Intuitively, the negative binomial makes mechanistic sense; it be derived from a continuous mixture of Poisson
+the field [@Pacala1988].  Intuitively, the negative binomial makes mechanistic sense; it can be derived from a continuous mixture of Poisson
 distributions with varying means. Thus, it represents a macroparasite
 populations colonizing hosts with varying traits or conditions, resulting
 in different colonization rates.
 
-However, the negative binomial has a minimum variance/mean ratio of one; it can
-not represent underdispersed populations. @Anderson1978 suggested the binomial
-distribution to for these cases. This has
+However, the negative binomial has a minimum variance/mean ratio of one; it cannot represent underdispersed populations. @Anderson1978 suggested the binomial
+distribution for these cases. This has
 the drawback of an absolute maximum number of infections, above which the
-probability is zero. In addition, it has the opposite problem of the negative binomial; it can only
+probability is zero. In addition, it has the opposite problem of the negative binomial: it can only
 represent underdispersed populations.  Using the negative and positive binomial distributions
 requires switching between mechanistically different representations of a population.
 
@@ -964,7 +963,7 @@ distribution, the $\nu$ term modifies it. When $\nu < 1$, the distribution is
 overdispersed; it has a fatter tail than a Poisson with the same rate parameter, and its variance is greater 
 than its mean. When $\nu > 1$, the distribution is underdispersed. Its tail is 
 thinned, and its variance is less than its mean. If $\nu = 1$, the CMP 
-distribution is equivlanet to a Poisson distribution. If $\nu = \infty$, the CMP distribution
+distribution is equivalent to a Poisson distribution. If $\nu = \infty$, the CMP distribution
 is the same as a Bernoulli distribution.
 
 The CMP distribution intuitively describes the processes that generate parasite 
@@ -996,7 +995,7 @@ population declines from its peak and the host population reaches low values.
 The variance/mean ratio eventually equilibriates near one.  At moderate growth
 rates, the host population goes through extended dampening cycles before reaching
 equilibrium, with repeated parasite population spikes (only one cycle is shown in figures).
-In this case, the population passes from underdispersion to overdispersion;
+In this case, the population passes from underdispersion to overdispersion:
 the variance/mean ratio declines modestly below one, then increases
 above one in each cycle before reaching equilibrium.  When the hosts have high
 growth rates, the dampened cycles are faster and both host and parasite populations
@@ -1008,7 +1007,7 @@ with the rise in parasite populations and remain overdispersed at equilibrium.
 The distributions generated by the ODE model are better approximated by the CMP
 distribution than the negative binomial at all growth rates.  Figure 2 shows
 the relative fit of the two distributions as measured by Kullback–Leibler divergence (KLD). Positive
-values indicate a better fit to the CMP than negative binomial. As KLD is log-scale
+values indicate a better fit to the CMP than negative binomial. As KLD is log-scale,
 the y-axis represents the equivalent of a likelihood ratio. In periods of
 neither over- nor underdispersion, both distributions fit equally. At all other
 times the distributions generated by the ODE model are better approximated
@@ -1032,7 +1031,7 @@ rates, where underdispersion is greatest.
 
 Figure 5 shows mean dynamics of 100 IBM runs as well as individual runs for the linear case. The dynamics of the discrete, stochastic IBM vary in minor ways from the deterministic ODE.  In general, mean host populations
 remain higher, and parasite populations are greater at both the peak of the
-epidemic and equilibrium. However, the variance/mean ratio does not decline below zero in the IBM in any
+epidemic and at equilibrium. However, the variance/mean ratio does not decline below zero in the IBM in any
 of the cases with linear host mortality.  Where the ODE system generates underdispersion,
 the IBM is randomly dispersed (variance/mean ratio $\approx$ 1).  Where the ODE generates overdispersion, the IBM
 generates stronger overdispersion. This is also reflected in the relative fits of the
@@ -1069,7 +1068,7 @@ This underdispersal effect is weakened or eliminated in discrete IBM models as c
 ODE models with the same parameterization.  In the IBM, the long tail is truncated, as no values below one are present, while in the ODE the tail may extend much further with below-one values.  This would
 intuitively make the distribution more underdispersed.
 However, the truncation of the tail also eliminates the outsize effect of these
-sub-1 groups from the system, resulting in less overall mortality, weakening
+sub-1 groups from the system, resulting in less overall mortality and weakening
 the forces that drive underdispersal.
 
 These models produce distributions more closely matched by the CMP distribution
@@ -1078,15 +1077,14 @@ distributed.  While it was expected that would occur for underdispersed
 populations, it is somewhat surprising that it did for overdispersed populations.
 This highlights the fact that the mechanism producing overdispersal in these
 models is different from that commonly-attributed case of variation in host
-vulnerability.  Rather, both under- and overdispersal arise from forces of load-
-dependent colonization and mortality.  In real systems, parasite distribution
-may be driven by a combination of these forces and host variation. Thus,
-mixed models, comprised of CMP distributions with varying $\lambda$ terms,
+vulnerability.  Rather, both under- and overdispersal arise from forces of load-dependent colonization and mortality.  In real systems, parasite distribution
+may be driven by a combination of these forces as well as host variation. Thus,
+mixed models, composed of CMP distributions with varying $\lambda$ terms,
 may be appropriate for describing populations when there is sufficient data
 and reason to examine multiple forces shaping host-parasite dynamics.
 
 The CMP distribution may be appropriate to other applications in ecology.
-Thus far, its use has been limited to a few test cases [@Ridout2004, (clutch size); @Lynch2014 (litter sizes, plant densities, and species richness)]. Mechanistically, CMP is an appropriate
+Thus far, its use has been limited to a few test cases, including [@Ridout2004, (clutch size) and  @Lynch2014 (litter sizes, plant densities, and species richness)]. Mechanistically, CMP is an appropriate
 fit for data generated by density-dependent processes or where high counts are
 censored. The **cmp** package can be used with other R packages such as **rethinking**
 [@rethinking] and **nimble** [@nimble] to build general linear models
@@ -1094,7 +1092,7 @@ and mixed models with the CMP distribution.
 
 ## Acknowledgements
 
-This work was supported by the U.S. Army Research Office (W911NF-13-1-0305 to A.Hastings) and the National Science Foundation Ecology of Infectious Disease program (EF-0622770 to D. Rizzo), and the UC Davis Ecology Fellowship.
+This work was supported by the U.S. Army Research Office (W911NF-13-1-0305 to A.Hastings), the National Science Foundation Ecology of Infectious Disease program (EF-0622770 to D. Rizzo), and the UC Davis Ecology Fellowship.
 
 \newpage 
 \appendix
